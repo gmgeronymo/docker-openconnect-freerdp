@@ -1,9 +1,11 @@
 OpenConnect and FreeRDP Docker Image
 ===================================================
 
+Forked from https://github.com/cmiles74/docker-openconnect-freerdp
+
 You can pull this image from Docker Hub.
 
-    docker pull cmiles74/docker-openconnect-freerdp
+    docker pull gmgeronymo/docker-openconnect-freerdp:bookworm
     
 I have to use [OpenConnect][0] at work to connect to a Cisco SSL VPN endpoint
 and it's not a lot of fun. Invariably I will connect, only to find that I've
