@@ -14,5 +14,5 @@ docker run \
       --device /dev/snd \
       --privileged \
       --name anyconnect-remmina \
-      cmiles74/docker-openconnect-freerdp
+      gmgeronymo/docker-openconnect-freerdp:bookworm
 
