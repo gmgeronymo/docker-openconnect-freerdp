@@ -8,11 +8,12 @@ docker run \
        -it \
        --rm \
       -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
-      -v ${HOME}:/developer/shared \
+      -v ${HOME}/src/docker-openconnect-freerdp/custom-bin:/developer/bin \
       -e DISPLAY=unix${DISPLAY} \
       -p 8989:8989 \
       --device /dev/snd \
       --privileged \
       --name anyconnect-remmina \
-      gmgeronymo/docker-openconnect-freerdp:bookworm
+      gmgeronymo/docker-openconnect-freerdp:v2 \
+      /developer/bin/start.sh
 
